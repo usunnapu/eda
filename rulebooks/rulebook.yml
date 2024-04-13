@@ -12,5 +12,6 @@
         run_job_template:
           name: test_jt
           organization: Default
-          extra_vars:
-            cluster_name: "abc"
+          job_args:
+            extra_vars:
+              cluster_name: "abc"
