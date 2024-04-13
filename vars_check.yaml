@@ -1,3 +1,10 @@
-- hosts: localhost
-  roles:
-    - sample
+- name: Print extra_vars
+  hosts: localhost
+  gather_facts: false
+  tasks:
+    - name: Print variable foo set by user
+      ansible.builtin.debug:
+        msg: '{{ foo }}'
+    - name: Print variable event set by rulebook engine
+      ansible.builtin.debug:
+        msg: '{{ ansible_eda.event }}'
