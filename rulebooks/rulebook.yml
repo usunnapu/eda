@@ -1,17 +1,17 @@
 - name: Listen for newly added ConfigMap resources
   hosts: all
   sources:
-    - sabre1041.eda.k8s:
+    - ansible.eda.k8s:
         api_version: v1
         kind: ConfigMap
         namespace: ansible-automation-platform
   rules:
     - name: Notify
-      condition: event.type == "ADDED"
-      action:
-        run_job_template:
-          name: test_jt
-          organization: Default
-          job_args:
-            extra_vars:
-              foo: "value"
+    condition: event.type == "ADDED"
+    action:
+      run_job_template:
+        name: test_jt
+        organization: Default
+        job_args:
+          extra_vars:
+            foo: "value"
