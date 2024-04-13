@@ -15,4 +15,4 @@
         job_args:
           extra_vars:
             dev_var: 9
-        inventory: 2
+            inventory: 2
