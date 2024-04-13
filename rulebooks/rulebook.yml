@@ -14,5 +14,4 @@
           organization: Default
           job_args:
             extra_vars:
-              foo: "{{ FOO }}"
-              bar: BAR
+              foo: "value"
