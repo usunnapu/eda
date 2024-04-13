@@ -2,4 +2,4 @@
 # tasks file for roles/sample
 - name: display extra_vars
   debug:
-    msg: "{{ extra_vars }}"
+    msg: "{{ cluster_name }}"
