@@ -2,7 +2,7 @@
 # tasks file for roles/sample
 - name: Print extra_vars
   hosts: localhost
-  gather_facts: false
+  gather_facts: true
 
   tasks:
     - name: display extra_vars
