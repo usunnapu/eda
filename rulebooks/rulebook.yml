@@ -11,5 +11,6 @@
       action:
         run_job_template:
           name: test_jt
+          organization: 1
           extra_vars:
             cluster_name: "abc"
