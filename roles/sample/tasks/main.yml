@@ -1,12 +1,8 @@
 ---
 # tasks file for roles/sample
-- name: Print extra_vars
-  hosts: all
-
-  tasks:
-    - name: display extra_vars
-      ansible.builtin.debug:
-        msg: '{{ foo }}'
-    - name: print event
-      ansible.builtin.debug:
-        msg: '{{ ansible_eda.event }}'
+- name: display extra_vars
+  ansible.builtin.debug:
+  msg: '{{ foo }}'
+- name: print event
+  ansible.builtin.debug:
+  msg: '{{ ansible_eda.event }}'
