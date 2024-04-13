@@ -15,6 +15,6 @@
         job_args:
           extra_vars:
             foo: "value"
-          inventory:
-            id: 2
-            name: "ndcmgmt"
+            inventory:
+              id: 2
+              name: "ndcmgmt"
