@@ -1,6 +1,6 @@
 - name: Print extra_vars
   hosts: localhost
-  gather_facts: false
+  gather_facts: true
   tasks:
     - name: Print variable foo set by user
       ansible.builtin.debug:
