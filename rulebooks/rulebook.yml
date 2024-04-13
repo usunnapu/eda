@@ -14,7 +14,9 @@
         organization: Default
         job_args:
           extra_vars:
-            foo: "value"
-            inventory:
-              id: 2
-              name: "ndcmgmt"
+            dev_var: 9
+          inventory: 2
+          instance_groups:
+          - 3
+          credentials:
+          - 4
