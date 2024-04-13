@@ -15,4 +15,4 @@
         job_args:
           extra_vars:
             foo: "value"
-          inventory: 2
+            inventory: 2
